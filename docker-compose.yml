@@ -1,0 +1,13 @@
+version: '2'
+
+networks:
+  default:
+    external:
+      name: bundlev2_prodnetwork
+
+services:
+  tomcat:
+    build: .
+    ports:
+      - 3000:8080
+      - 10000:10000
